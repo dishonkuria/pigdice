@@ -58,3 +58,16 @@ Player.prototype.winnerCheck = function () {
    $(".player1Name").val("");
    $(".player2Name").val("");
  }
+
+ //User Interface
+ $(document).ready(function() {
+
+   $("button#start").click(function(event){
+     player1 = new Player(true);
+     player2 = new Player(false);
+     $(".player-console").show();
+     $(".start-menu").hide();
+
+     
+   }
+ }
