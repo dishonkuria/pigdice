@@ -92,3 +92,10 @@ Player.prototype.winnerCheck = function () {
 
   $(".start-menu").show();
 });
+
+ $("button#player1-roll").click(function(event) {
+   player2.roll = throwdice();
+   $("#die-roll-2").text(player2.roll);
+   player2.rollone();
+   $("#round-total-2").text(player2.tempscore);
+ });
