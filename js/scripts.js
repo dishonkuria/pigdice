@@ -99,3 +99,13 @@ Player.prototype.winnerCheck = function () {
    player2.rollone();
    $("#round-total-2").text(player2.tempscore);
  });
+
+ $("button#player1-hold").click(function(event){
+   player2.hold();
+   $("#total-score-2").text(player2.totalscore);
+   $("round-total-2").empty();
+   $("#die-roll-2").empty();
+   player2.winnerCheck();
+ });
+
+});
