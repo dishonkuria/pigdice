@@ -76,6 +76,10 @@ Player.prototype.winnerCheck = function () {
 
      player1.playerName=player1Name;
      player2.playerName=player2Name;
-     
-   }
- }
+
+   });
+ $("button#new-game").click(function(event){
+  $(".player-console").hide();
+  clearValues();
+  player1.newGame();
+  player2.newGame();
