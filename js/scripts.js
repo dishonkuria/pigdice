@@ -35,10 +35,26 @@ var player2="";
 
   // // changing return
   // Player.prototype.changeturn = function () {
-  //  if ~(this.roll ===1) {
+  //  if (this.roll ===1) {
   //    this.turn = false;
   //  }else {
   //    this.turn = true;
    //  }
   //  }
 // check for 100
+Player.prototype.winnerCheck = function () {
+  if (this.totalscore >= 100) {
+    alert(this.playerName + " You are the winner!");
+  }
+}
+ Player.prototype.newGame = function () {
+   //debugger;
+   this.roll = 0;
+   this.tempscore = 0;
+   this.playerName ="";
+ }
+
+ var clearValues = function(){
+   $(".player1Name").val("");
+   $(".player2Name").val("");
+ }
