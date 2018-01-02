@@ -32,3 +32,13 @@ var player2="";
     // this.changeturn();
     alert(this.playerName + ", your turn is over,pass the mouse!");
   }
+
+  // // changing return
+  // Player.prototype.changeturn = function () {
+  //  if ~(this.roll ===1) {
+  //    this.turn = false;
+  //  }else {
+  //    this.turn = true;
+   //  }
+  //  }
+// check for 100
